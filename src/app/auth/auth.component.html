@@ -1,0 +1,19 @@
+<div class="row" style="margin-top: 2%">
+  <form [formGroup]="emailForm" (ngSubmit)="login()" *ngIf="!emailSent && !currentUser">
+    <div class="row">
+      <div class="six columns">
+        <input class="u-full-width" type="email" placeholder="Enter your email address..." id="email" formControlName="email">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 10px">
+      <input class="button-primary" type="submit" value="Login">
+    </div>
+  </form>
+  <div class="row" *ngIf="emailSent">
+    <h4 style="color: lightgreen;font-weight: bolder">Email Sent!</h4>
+  </div>
+</div>
+<div class="row" *ngIf="currentUser">
+  <h5>Wait... Scratch that. You're logged in, wow! Welcome {{currentUser.email}}!</h5>
+  <p>Now if only this wasn't a demo...</p>
+</div>

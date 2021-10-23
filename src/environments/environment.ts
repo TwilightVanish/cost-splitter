@@ -4,13 +4,15 @@
 
 export const environment = {
   production: false,
+  redirectUrl: 'http://localhost:4200',
   firebase: {
+    projectId: 'jados-cost-splitter',
+    appId: '1:131791264113:web:ecaa2521f0862503dfbed0',
+    storageBucket: 'jados-cost-splitter.appspot.com',
+    locationId: 'europe-west',
     apiKey: 'AIzaSyD7zMqr1iMHTlM6JCE88Tf7u_UvliH0fFA',
     authDomain: 'jados-cost-splitter.firebaseapp.com',
-    projectId: 'jados-cost-splitter',
-    storageBucket: 'jados-cost-splitter.appspot.com',
     messagingSenderId: '131791264113',
-    appId: '1:131791264113:web:ecaa2521f0862503dfbed0'
   }
 };
 
